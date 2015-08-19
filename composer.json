@@ -2,6 +2,7 @@
   "name": "exposer/class-exposer",
   "description": "Allows access to a classes private methods and variables",
   "license": "mit",
+  "minimum-stability": "stable",
   "authors": [
     {
       "name": "Craig Humphreys"
