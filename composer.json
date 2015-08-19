@@ -1,0 +1,10 @@
+{
+  "name": "Exposer/ClassExposer",
+  "description": "Allows access to a classes private methods and variables",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Craig Humphreys"
+    }
+  ]
+}
