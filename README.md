@@ -1,11 +1,6 @@
 
-# Class Exposer
+# Access a PHP Classes Private & Protected Methods & Properties
 
-### Access a PHP Classes Private & Protected Methods & Properties
-
-## What?
-
-PHP class to expose private and protected methods and properties
 
 ## Why?
 
