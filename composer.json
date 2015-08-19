@@ -1,5 +1,5 @@
 {
-  "name": "Exposer/ClassExposer",
+  "name": "exposer/class-exposer",
   "description": "Allows access to a classes private methods and variables",
   "license": "mit",
   "authors": [
