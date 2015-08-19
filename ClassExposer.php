@@ -5,12 +5,12 @@ use ReflectionClass;
 
 /**
  * Class ClassExposer
+ * @package Expose
  *
  * Exposes private and protected class methods and properties.
  *
  * Makes all class methods and properties accessible on the given class instance.
  *
- * @package Expose
  */
 class ClassExposer {
 
@@ -42,8 +42,7 @@ class ClassExposer {
 	{
 		$method = $this->reflector->getMethod($method);
 		$method->setAccessible(true);
-
-		return $method->invoke($this->obj, $args);
+		return $method->invokeArgs($this->obj, $args);
 	}
 
 	/**

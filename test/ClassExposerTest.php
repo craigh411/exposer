@@ -2,7 +2,6 @@
 namespace Exposer\Test;
 
 require_once __DIR__ . '/../vendor/autoload.php';
-
 use Exposer\ClassExposer;
 use PHPUnit_Framework_TestCase;
 
@@ -16,6 +15,16 @@ class ClassExposerTest extends PHPUnit_Framework_TestCase {
 		$testClass = new ClassExposer(new TestClass());
 		$val = $testClass->privateMethod();
 		$this->assertEquals($val, "I'm private");
+	}
+
+	/**
+	 * @test
+	 */
+	public function it_calls_a_private_method_with_param_on_reflected_class()
+	{
+		$testClass = new ClassExposer(new TestClass());
+		$val = $testClass->privateMethodWithParam("foo", "bar");
+		$this->assertEquals("foobar", $val);
 	}
 
 	/**
@@ -46,5 +55,4 @@ class ClassExposerTest extends PHPUnit_Framework_TestCase {
 		$isInstance = ($testClass instanceof ClassExposer) ? true : false;
 		$this->assertTrue($isInstance);
 	}
-
 }
