@@ -8,10 +8,12 @@
       "name": "Craig Humphreys"
     }
   ],
-  "require": {
+  "require-dev": {
     "phpunit/phpunit": "4.8.5"
   },
-  "autoload": {
-    "classmap": ["/", "Test/TestClass.php", "ClassExposer.php"]
-  }
+  "autoload" : {
+      "psr-0": {
+        "Exposer": "src"
+      }
+    }
 }

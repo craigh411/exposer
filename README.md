@@ -6,6 +6,20 @@
 
 Useful for testing private and protected methods in a class.
 
+##Installation
+
+You can simply download or copy & paste the ClassExposer.php class
+and include it in your own php files.
+
+### Composer
+
+Also available via Composer:
+
+`# composer require exposer/class-exposer`
+
+Make sure you have minimum-stability set to 'dev' in your
+composer.json file.
+
 ## Usage
 
 ```

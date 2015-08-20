@@ -1,7 +1,6 @@
 <?php
-namespace Exposer\Test;
+namespace Exposer\Tests;
 
-require_once __DIR__ . '/../vendor/autoload.php';
 use Exposer\ClassExposer;
 use PHPUnit_Framework_TestCase;
 

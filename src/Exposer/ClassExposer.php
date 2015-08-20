@@ -42,6 +42,7 @@ class ClassExposer {
 	{
 		$method = $this->reflector->getMethod($method);
 		$method->setAccessible(true);
+
 		return $method->invokeArgs($this->obj, $args);
 	}
 

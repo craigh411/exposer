@@ -1,5 +1,5 @@
 <?php
-namespace Exposer\Test;
+namespace Exposer\Tests;
 
 class TestClass {
 
