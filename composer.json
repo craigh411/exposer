@@ -1,6 +1,6 @@
 {
   "name": "exposer/class-exposer",
-  "description": "Allows access to a classes private methods and variables",
+  "description": "Allows access to a classes private methods and properties",
   "license": "MIT",
   "minimum-stability": "dev",
   "authors": [
