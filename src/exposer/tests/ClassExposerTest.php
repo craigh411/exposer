@@ -13,7 +13,7 @@ class ClassExposerTest extends PHPUnit_Framework_TestCase {
 	{
 		$testClass = new ClassExposer(new TestClass());
 		$val = $testClass->privateMethod();
-		$this->assertEquals($val, "I'm private");
+		$this->assertEquals("I'm private", $val);
 	}
 
 	/**
@@ -33,7 +33,7 @@ class ClassExposerTest extends PHPUnit_Framework_TestCase {
 	{
 		$testClass = new ClassExposer(new TestClass());
 		$testClass->privateVar = "foo";
-		$this->assertEquals($testClass->privateVar, "foo");
+		$this->assertEquals("foo", $testClass->privateVar);
 	}
 
 	/**
@@ -42,7 +42,7 @@ class ClassExposerTest extends PHPUnit_Framework_TestCase {
 	public function it_gets_a_private_property_on_reflected_class()
 	{
 		$testClass = new ClassExposer(new TestClass());
-		$this->assertEquals($testClass->privateVar, null);
+		$this->assertEquals(null, $testClass->privateVar);
 	}
 
 	/**
