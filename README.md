@@ -1,7 +1,6 @@
 
 # Access a PHP Classes Private & Protected Methods & Properties
 
-
 ## Why?
 
 Useful for testing private and protected methods in a class.
@@ -15,7 +14,7 @@ and include it in your own php files.
 
 Also available via Composer:
 
-`# composer require exposer/class-exposer`
+`$ composer require exposer/class-exposer`
 
 Make sure you have minimum-stability set to 'dev' in your
 composer.json file.
